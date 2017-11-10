@@ -10,6 +10,7 @@ function nowServing(deliLine){
     return 'There is nobody waiting to be served!';
   }
   else{
-    return "blobl";
+    var ret = deliLine.shift();
+    return 'Currently serving '+ ret +'.'
   }
 }
