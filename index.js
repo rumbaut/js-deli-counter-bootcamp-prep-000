@@ -17,10 +17,14 @@ function nowServing(deliLine){
 
 function currentLine(line){
   if(line.length == 0){
-    return 'There is nobody waiting to be served!';
+    return 'The line is currently empty.';
   }
   else{
-    var ret = deliLine.shift();
+    var ret;
+    for (var i = 0; i < line.length; i++) {
+      ret +=(i + 1) + '. ' +line[i];
+      ret += line.length==(i+1)?'':','
+    }
     return 'Currently serving '+ ret +'.'
   }
 }
