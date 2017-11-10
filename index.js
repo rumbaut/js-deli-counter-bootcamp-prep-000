@@ -23,7 +23,7 @@ function currentLine(line){
     var ret;
     for (var i = 0; i < line.length; i++) {
       ret +=(i + 1) + '. ' +line[i];
-      ret += line.length==(i+1)?'':','
+      ret += line.length==(i+1)?'':', '
     }
     return 'The line is currently:'+ ret +'.'
   }
