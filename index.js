@@ -20,7 +20,7 @@ function currentLine(line){
     return 'The line is currently empty.';
   }
   else{
-    var ret;
+    var ret='';
     for (var i = 0; i < line.length; i++) {
       ret +=(i + 1) + '. ' +line[i];
       ret += line.length==(i+1)?'':', '
