@@ -25,6 +25,6 @@ function currentLine(line){
       ret +=(i + 1) + '. ' +line[i];
       ret += line.length==(i+1)?'':','
     }
-    return 'Currently serving '+ ret +'.'
+    return 'The line is currently:'+ ret +'.'
   }
 }
