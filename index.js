@@ -1,1 +1,1 @@
-var kasd =[];
+var katzDeli = [];
