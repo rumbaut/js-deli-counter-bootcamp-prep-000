@@ -14,3 +14,13 @@ function nowServing(deliLine){
     return 'Currently serving '+ ret +'.'
   }
 }
+
+function currentLine(line){
+  if(line.length == 0){
+    return 'There is nobody waiting to be served!';
+  }
+  else{
+    var ret = deliLine.shift();
+    return 'Currently serving '+ ret +'.'
+  }
+}
